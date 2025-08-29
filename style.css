@@ -1,0 +1,227 @@
+ @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Young+Serif&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: "Lato", sans-serif;
+     background-color: hsl(221, 100%, 96%);
+     font-size: 18px;
+ }
+
+ img {
+     width: 18px;
+     margin: 0px 10px;
+ }
+
+ .container {
+     /* display: flex; */
+     background-color: hsl(0, 0%, 100%);
+     display: grid;
+     grid-template-areas: "one two";
+     grid-auto-columns: 1fr;
+     /* grid-template-columns: 50%; */
+     width: 50%;
+     margin: 25vh auto;
+     border-radius: 25px;
+     height: 100%;
+ }
+ .card {
+     grid-area: one;
+     color: white;
+     background-color: hsl(241, 81%, 54%);
+     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+     border-radius: 25px;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     height: 100%;
+     padding: 30px;
+
+ }
+
+ .card h4 {
+     margin-bottom: 25px;
+
+     color: hsl(241, 100%, 89%);
+     font-size: 20px;
+ }
+
+ .card h3 {
+     margin: 25px;
+     font-size: 35px;
+     margin-bottom: 5px;
+ }
+
+ .card p {
+     text-align: center;
+     font-size: 15px;
+     color: hsl(241, 100%, 89%);
+
+ }
+
+ .circle {
+     border-radius: 50%;
+     background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+     width: 175px;
+     height: 175px;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     text-align: center;
+     justify-content: center;
+     margin: 0px auto;
+     padding: 25px;
+
+ }
+
+ .circle h2 {
+     font-weight: bold;
+     font-size: 60px;
+ }
+
+ .circle h6 {
+     color: hsl(241, 100%, 89%);
+     font-size: 15px;
+
+ }
+
+ .card1 {
+     /* height: 300px; */
+     grid-area: two;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+ }
+
+ table {
+     /* border-collapse: collapse; */
+     border-collapse: separate;
+     border-spacing: 0 20px;
+     /* width: 300px; */
+     text-align: left;
+     /* border: 2px solid black; */
+     /* display: flex; */
+
+ }
+
+
+
+ td {
+     border-radius: 10px;
+     padding: 10px;
+
+ }
+
+ caption {
+     text-align: left;
+     font-weight: bold;
+     font-size: 25px;
+ }
+
+ table tr:nth-child(1) {
+     background-color: hsl(0, 100%, 67%, 0.1)
+ }
+
+ tr:nth-child(1) td:nth-child(1) {
+     color: hsla(0, 100%, 67%);
+     border-bottom-right-radius: 0px;
+     border-top-right-radius: 0px;
+ }
+
+ tr:nth-child(1) td:nth-child(2) {
+     border-bottom-left-radius: 0px;
+     border-top-left-radius: 0px;
+ }
+
+ table tr:nth-child(2) {
+     background-color: hsl(39, 100%, 56%, 0.1);
+ }
+
+ tr:nth-child(2) td:nth-child(1) {
+     color: hsl(39, 100%, 56%);
+     border-bottom-right-radius: 0px;
+     border-top-right-radius: 0px;
+ }
+
+ tr:nth-child(2) td:nth-child(2) {
+     border-bottom-left-radius: 0px;
+     border-top-left-radius: 0px;
+ }
+
+ table tr:nth-child(3) {
+     background-color: hsl(166, 100%, 37%, 0.1);
+ }
+
+ tr:nth-child(3) td:nth-child(1) {
+     color: hsl(166, 100%, 37%);
+     border-bottom-right-radius: 0px;
+     border-top-right-radius: 0px;
+ }
+
+ tr:nth-child(3) td:nth-child(2) {
+     border-bottom-left-radius: 0px;
+     border-top-left-radius: 0px;
+ }
+
+ table tr:nth-child(4) {
+     background-color: hsl(234, 85%, 45%, 0.1)
+ }
+
+ tr:nth-child(4) td:nth-child(1) {
+     color: hsl(234, 85%, 45%);
+     border-bottom-right-radius: 0px;
+     border-top-right-radius: 0px;
+ }
+
+ tr:nth-child(4) td:nth-child(2) {
+     border-bottom-left-radius: 0px;
+     border-top-left-radius: 0px;
+ }
+
+ button {
+     padding: 10px;
+     border-radius: 20px;
+     width: 225px;
+     height: 45px;
+     background-color: hsl(224, 30%, 27%);
+     color: hsl(221, 100%, 96%);
+     font-size: 20px;
+     margin-top: 20px;
+ }
+
+ button:hover {
+     cursor: pointer;
+     background-color: hsl(241, 81%, 54%);
+ }
+ @media screen and (max-width:500px) {
+    .container{
+        margin: 0;
+        padding:0 ;
+        grid-template-areas: 
+        "one"
+        "two";
+        width: 100%;
+        height: 100%;
+    min-height: 100vh;
+    }
+    .card1{
+        margin: 20px 0;
+    }
+    table{
+        width: 85%;
+    }
+    button{
+        width: 85%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+ }
