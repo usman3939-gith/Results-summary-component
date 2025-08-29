@@ -213,6 +213,10 @@
         height: 100%;
     min-height: 100vh;
     }
+   .card{
+            border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+     }
     .card1{
         margin: 20px 0;
     }
@@ -224,4 +228,5 @@
         margin-top: 0px;
         margin-bottom: 10px;
     }
+
  }
